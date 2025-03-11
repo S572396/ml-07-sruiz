@@ -70,14 +70,17 @@ Reflection 2: What patterns or anomalies do you see? Do any features stand out? 
 
 ### Section 3. Feature Selection and Justification
 - 3.1 Choose features and target
-  - Select two or more input features for predicting the target
-  - Select a target variable
-  - Justify your selection with reasoning.
+  - Select two or more input features (numerical for regression, numerical and/or categorical for classification)
+  - Select a target variable (as applicable)
+    - Regression: Continuous target variable (e.g., price, temperature).
+    - Classification: Categorical target variable (e.g., gender, species).
+    - Clustering: No target variable.
+    - Justify your selection with reasoning.
 - 3.2 Define X and y
   - Assign input features to X
-  - Assign target variable to y 
+  - Assign target variable to y (as applicable)
 
-Reflection 3: Why did you choose these features? How might they impact predictions?
+Reflection 3: Why did you choose these features? How might they impact predictions or accuracy?
 
 ---
 
@@ -98,7 +101,7 @@ Reflection 4: How well did the model perform? Any surprises in the results?
 - 5.2 Implement Pipeline 2: Imputer → Polynomial Features (degree=3) → StandardScaler → Linear Regression.
 - 5.3 Compare performance of all models across the same performance metrics
 
-Reflection 5: Which models improved predictions or classification accuracy? How does scaling impact results?
+Reflection 5: Which models performed better? How does scaling impact results?
 
 ---
 
@@ -113,12 +116,21 @@ Reflection 6: What did you learn from this project?
 
 ## Tasks to Complete the Assignment
 
-1. Create a GitHub repository named ml_regression_yourname.  
-1. Upload your dataset to a data/ folder in the repository.  
-1. Develop a Jupyter Notebook (final_yourname.ipynb) structured as outlined above.  
+1. Create a GitHub repository named **ml_regression_yourname**.  
+1. Upload your dataset to a **data folder** in the repository.  
+1. Develop a Jupyter Notebook (regression_yourname.ipynb) structured as outlined above.  
 1. Complete and write reflections for each section as you work.
-1. Write a README.md summarizing your project, dataset, and findings.  
-1. Review a classmate’s project and provide feedback in peer_review.md.
+1. Write a README.md summarizing your project, dataset, and findings (see below).
+1. Review a classmate’s project and provide feedback in peer_review.md (see below).
+
+---
+
+## README.md (Required)
+
+Include a professional README.md that introduces your project. Include:
+- a clickable link to your notebook file.
+- a clickable link to your your peer review Markdown file.
+- Instructions on how to set up your virtual environment and run your notebook locally.
 
 ---
 
@@ -127,19 +139,15 @@ Reflection 6: What did you learn from this project?
 Review one other GitHub repository and provide feedback on:
 
 1. Clarity & Organization (Is the notebook structured and easy to follow?)
-1. Feature Selection & Justification (Do the chosen features make sense for the task and target?)
+1. Feature Selection & Justification (Do the chosen features make sense given the objectives?)
 1. Model Performance & Comparisons (Are the results and comparisons clearly explained?)
 1. Reflection Quality (Are insights well thought out?)
 
 Submission: Submit a short peer review document in your own repository titled peer_review.md.  
 The peer review must contain a **clickable Markdown link to the notebook (.ipynb) file reviewed** along with your personal, well-organized and presented 4-pont review. 
-
-## README.md (Required)
-
-Include a professional README.md that introduces your project. Include:
-- a clickable link to your notebook file.
-- a clickable link to your your peer review Markdown file.
-- Instructions on how to set up your virtual environment and run your notebook locally. 
+Provide specifics - both positive and constructive feedback. 
+Suggest improvements where possible and explain why a different choice might be useful as well.
+Focus on actionable suggestions that the author could realistically implement.
 
 ---
 
@@ -147,9 +155,9 @@ Include a professional README.md that introduces your project. Include:
 
 Verify your repository contains:
 
-[ ] Jupyter Notebook (final_project.ipynb) with numbered sections and reflections.  
+[ ] Jupyter Notebook with proper name, numbered sections and reflections.  
 [ ] README.md (see above)
-[ ] Dataset stored in a data/ folder.  
+[ ] Dataset, stored in a data folder.  
 [ ] Peer Review (peer_review.md).  
 
 ---
