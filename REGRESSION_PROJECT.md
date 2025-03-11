@@ -69,28 +69,36 @@ Reflection 2: What patterns or anomalies do you see? Do any features stand out? 
 ---
 
 ### Section 3. Feature Selection and Justification
-- 3.1 Choose two input features for predicting the target.
-- 3.2 Justify your selection with reasoning.
+- 3.1 Choose features and target
+  - Select two or more input features for predicting the target
+  - Select a target variable
+  - Justify your selection with reasoning.
+- 3.2 Define X and y
+  - Assign input features to X
+  - Assign target variable to y 
 
 Reflection 3: Why did you choose these features? How might they impact predictions?
 
 ---
 
-### Section 4. Train a Linear Regression Model
-- 4.1 Define X (features) and y (target).
-- 4.2 Train a Linear Regression model using Scikit-Learn.
-- 4.3 Report R², MAE, RMSE.
+### Section 4. Train a Model (Linear Regression)
+- 4.1 Split the data into training and test sets using train_test_split (or StratifiedShuffleSplit if class imbalance is an issue).
+- 4.2 Train model using Scikit-Learn model.fit() method
+- 4.3 Evalulate performance, for example:
+  - Regression: R^2, MAE, RMSE (RMSE has been recently updated)
+  - Classification: Accuracy, Precision, Recall, F1-score, Confusion Matrix
+  - Clustering: Inertia, Silhouette Score
 
 Reflection 4: How well did the model perform? Any surprises in the results?
 
 ---
 
-### Section 5. Improve the Model: Implement Regression Pipelines
+### Section 5. Improve the Model or Try Alternates (Implement Pipelines)
 - 5.1 Implement Pipeline 1: Imputer → StandardScaler → Linear Regression.
 - 5.2 Implement Pipeline 2: Imputer → Polynomial Features (degree=3) → StandardScaler → Linear Regression.
-- 5.3 Compare performance of all three models.
+- 5.3 Compare performance of all models across the same performance metrics
 
-Reflection 5: Did polynomial features improve predictions? How does scaling impact results?
+Reflection 5: Which models improved predictions or classification accuracy? How does scaling impact results?
 
 ---
 
@@ -119,8 +127,8 @@ Reflection 6: What did you learn from this project?
 Review one other GitHub repository and provide feedback on:
 
 1. Clarity & Organization (Is the notebook structured and easy to follow?)
-1. Feature Selection & Justification (Do the chosen features make sense?)
-1. Model Performance & Comparisons (Is the evaluation well explained?)
+1. Feature Selection & Justification (Do the chosen features make sense for the task and target?)
+1. Model Performance & Comparisons (Are the results and comparisons clearly explained?)
 1. Reflection Quality (Are insights well thought out?)
 
 Submission: Submit a short peer review document in your own repository titled peer_review.md.  
